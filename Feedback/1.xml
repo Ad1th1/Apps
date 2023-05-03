@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/feedback_label"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/very_satisfied"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/very_satisfied" />
+
+        <RadioButton
+            android:id="@+id/satisfied"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/satisfied" />
+
+        <RadioButton
+            android:id="@+id/neutral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/neutral" />
+
+        <RadioButton
+            android:id="@+id/dissatisfied"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dissatisfied" />
+
+        <RadioButton
+            android:id="@+id/very_dissatisfied"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/very_dissatisfied" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/comments_label"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:maxLines="5" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_button_label" />
+
+</LinearLayout>
